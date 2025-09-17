@@ -1,3 +1,19 @@
-body {
-    font-family: sans-serif;
+/* Normalize.css and Skeleton CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css');
+
+/* Custom styles */
+.text-center {
+  text-align: center;
+}
+
+.response-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
 }
