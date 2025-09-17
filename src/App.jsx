@@ -34,7 +34,7 @@ const Chatbot = () => {
   return (
     <div className="container">
       <h2 className="text-center" style={{ marginBottom: "2rem" }}>
-        Hugging Face Text Generation Demo
+        Hugging Face Text Summarization
       </h2>
       <div className="row">
         <div className="twelve columns">
