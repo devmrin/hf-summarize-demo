@@ -33,13 +33,17 @@ const Chatbot = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center" style={{ marginBottom: "2rem" }}>
+      <h2
+        className="text-center"
+        style={{ marginBottom: "2rem", fontWeight: "bold" }}
+      >
         Hugging Face Text Summarization
       </h2>
       <div className="row">
         <div className="twelve columns">
           <form onSubmit={handleSubmit}>
             <textarea
+              id="input-text"
               className="u-full-width"
               value={input}
               onChange={(e) => setInput(e.target.value)}
