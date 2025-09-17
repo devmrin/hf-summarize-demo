@@ -1,12 +1,42 @@
-# React + Vite
+# Hugging Face Summarization Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates text summarization using Hugging Face's inference API integrated with React and Mantine for a modern UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Text Summarization**: Enter text in the form, and the app summarizes it using the Hugging Face model `sshleifer/distilbart-cnn-12-6`.
+- **Modern UI**: Built with Mantine components for a responsive and visually appealing interface.
+- **React Integration**: Powered by React and Vite for fast development and hot module replacement.
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+3. Add your Hugging Face API key to the `.env` file:
+   ```env
+   VITE_HUGGINGFACE_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+## Usage
+
+- Open the app in your browser.
+- Type or paste text into the textarea.
+- Click "Send" to get the summarized response.
+
+## Technologies Used
+
+- **React**: Frontend framework.
+- **Mantine**: UI components.
+- **Hugging Face Inference API**: Text summarization.
+- **Vite**: Build tool.
+
+## License
+
+This project is licensed under the MIT License.
